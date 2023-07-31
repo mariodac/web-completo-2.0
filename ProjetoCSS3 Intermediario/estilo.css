@@ -3,25 +3,34 @@ Modelo de caixa
 */
 .conteudo {
     border: 1px solid red;
-    /* padding-top: 20px; 
-    padding-right: 20px;
-    padding-bottom: 20px; 
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 50px;
-    margin-left: 5px; */
-    /* mesmo coisa para margin */
-    /* padding/margin em uma linha -> top right bottom left */
+    width: 150px;
+    /* padding aplica espaçamento interno */
+    /* o padding é contabilizado no tamanho do elemento, nesse casoo 150px + 50px */
+    /* padding-top: 50px;  */
+    /* padding-right: 50px; */
+    /* padding-bottom: 50px;  */
+    /* padding-left: 50px; */
+    /* margin aplica espaçamento externo */
+    /* margin-top: 10px; */
+    /* margin-right: 50px; */
+    /* margin-bottom: 50px; */
+    /* margin-left: 5px; */
+    /* aplicar padding/margin em uma linha -> top right bottom left */
     /* padding: 20px 20px 15px 10px; */
     /* margin: 20px 30px 5px 50px; */
     /* top = right = bottom = left = 10px */
     /* padding: 10px; */
     /* margin: 10px; */
+    /* aplicando com apenas dois valores */
     /* top = bottom = 20px, right = left = 50px */
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
     margin: 20px 50px;
+}
+
+.conteudo2 {
+    border: 1px solid black;
     width: 150px;
+    margin: 10px
 }
 
 /* 
@@ -37,4 +46,44 @@ Noticia
 h2 {
     /* border: 1px solid red; */
     margin: 0px;
+}
+
+/* Elementos flutuantes */
+/* float permite criar um fluxo diferenciado do padrão a direita ou esquerda */
+/* deve verificar se há espaço para o elemento flutuar */
+#principal{
+    border: 5px solid gold;
+    background: green;
+}
+.content{
+    border: 1px solid black;
+    background: blue;
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin: 20px;
+}
+
+.content1{
+    border: 1px solid black;
+    background: gray;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.content2{
+    border: 1px solid black;
+    background: red;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /*left right none */
+    float: right;
+}
+
+.clear{
+    /* limpa o fluxo flutuante */
+    /*left right both none */
+    clear: both;
 }

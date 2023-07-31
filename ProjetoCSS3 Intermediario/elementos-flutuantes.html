@@ -3,63 +3,27 @@
     <head>
         <title>Elementos flutuantes</title>
         <meta charset="utf-8">
-        <style type="text/css">
-            #principal{
-                border: 5px solid gold;
-                background: green;
-            }
-            .conteudo{
-                border: 1px solid black;
-                background: blue;
-                width: 150px;
-                height: 150px;
-                float: right;
-                margin: 20px;
-            }
-
-            .conteudo1{
-                border: 1px solid black;
-                background: blue;
-                width: 100px;
-                height: 100px;
-                float: right;
-            }
-
-            .conteudo2{
-                border: 1px solid black;
-                background: red;
-                width: 200px;
-                height: 200px;
-                margin: 20px;
-                /*left right none */
-                float: right;
-            }
-
-            .clear{
-                /*left right both none */
-                clear: both;
-            }
-
-        </style>
+        <link rel="stylesheet" href="estilo.css" type="text/css">
     </head>
     <body>
+        <!-- quando se utiliza elementos flutuantes dentro de uma div, irá prevalecer o fluxo flutuante, onde o conteúdo da div será omitido -->
         <div id="principal" class="">
-            <!-- <div class="conteudo">
-                Conteudo 0
+            <!-- <div class="content">
+                content 0
             </div> -->
-            <div class="conteudo">
-                Conteudo 1
+            <div class="content">
+                Conteudo 1 Eu velit voluptate anim eiusmod laboris magna nulla cupidatat velit exercitation ut quis labore laborum.
             </div>
-            <div class="conteudo2">
-                Conteudo 2
+            <div class="content2">
+                Conteudo 2 Dolore non labore magna cillum tempor anim nisi ut enim duis anim consectetur laborum.
             </div>
-            <div class="conteudo">
-                Conteudo 3
+            <div class="content1">
+                Conteudo 3 Consequat elit id veniam
             </div>
             <p class="">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <!-- apenas uma div vazia para limpar o fluxo do documento -->
+            <!-- apenas uma div vazia para limpar o fluxo do documento, expande (empurra o conteudo) para que a div não está flutuando apareça corretamente -->
             <div class="clear"></div>
         </div>
     </body>

@@ -87,3 +87,30 @@ h2 {
     /*left right both none */
     clear: both;
 }
+
+/* Elementos flutuantes na prática */
+
+body {
+    background: #f4f4f4;
+}
+
+#main {
+    width: 920px;
+    /* border: 1px solid red; */
+}
+
+.new {
+    background: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 8px;
+    float: left;
+}
+
+.imagem-galeria {
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}

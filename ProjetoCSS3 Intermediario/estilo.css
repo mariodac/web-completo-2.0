@@ -114,3 +114,15 @@ body {
     float: left;
     margin: 15px;
 }
+
+
+/* Elementos inline block */
+.inline{
+    border: 1px solid red;
+    display: inline;
+}
+
+.block{
+    border: 1px solid green;
+    display: block;
+}

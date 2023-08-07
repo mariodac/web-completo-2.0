@@ -91,7 +91,7 @@ h2 {
 /* Elementos flutuantes na prática */
 
 body {
-    background: #f4f4f4;
+    background: #007fc7;
 }
 
 #main {
@@ -125,4 +125,59 @@ body {
 .block{
     border: 1px solid green;
     display: block;
+}
+
+/* Posicionamentos */
+
+#container{
+    background: #fff;
+    width: 800px;
+    /* utilizar auto para centralizar elemento na tela */
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+p {
+    width: 300px;
+}
+
+/* Propriedades de deslocamento 
+top, right, bottom, left
+Para posicionar o elemento 
+Valores negativos realizam o posicionamento inverso*/
+.relative {
+    border: 1px solid red;
+    position: relative;
+    /* se houver valores pra top e bottom será obedecido o valor de top */
+    top: -200px;
+    bottom: -150px;
+    /* se houver valores pra left e right será obedecido o valor de left */
+    left: 350px;
+    right: -150px;
+}
+
+/* a posição absoluta retira o elemento do fluxo normal do documento e não afeta os outros elementos 
+a posição é calculada em relação ao container que está o elemento, se o seu container tiver uma posição senão vai ser posicionado no body
+O elemento absoluto terá sempre o seu posicionamento baseado no container que tenha uma posição diferente de estática */
+.absolute {
+    border: 1px solid red;
+    background: #f2f2f2;
+    position: absolute;
+    top: 80px;
+    right: 80px
+}
+
+
+/* a posição fixa deixa o elemento fixo em relação a janela do navegador
+o elemento não fica totalmente fixado na posição 0 do topo devido ao elemento p ter uma margem própria */
+.fixed {
+    border: 1px solid red;
+    background: #f2f2f2;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px;
 }

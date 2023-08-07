@@ -143,9 +143,10 @@ p {
 }
 
 /* Propriedades de deslocamento 
-top, right, bottom, left
 Para posicionar o elemento 
+top, right, bottom, left
 Valores negativos realizam o posicionamento inverso*/
+/* a posição relativa tem seu seu alinhamento baseado na posição inicial do elemento*/
 .relative {
     border: 1px solid red;
     position: relative;
@@ -169,7 +170,7 @@ O elemento absoluto terá sempre o seu posicionamento baseado no container que t
 }
 
 
-/* a posição fixa deixa o elemento fixo em relação a janela do navegador
+/* a posição fixa deixa o elemento fixo em relação a janela do navegador (viewport)
 o elemento não fica totalmente fixado na posição 0 do topo devido ao elemento p ter uma margem própria */
 .fixed {
     border: 1px solid red;
@@ -177,7 +178,7 @@ o elemento não fica totalmente fixado na posição 0 do topo devido ao elemento
     position: fixed;
     top: 0px;
     bottom: 0px;
-    right: 0px;
     left: 0px;
+    right: 0px;
     margin: 0px;
 }

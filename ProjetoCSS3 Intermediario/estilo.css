@@ -182,3 +182,36 @@ o elemento não fica totalmente fixado na posição 0 do topo devido ao elemento
     right: 0px;
     margin: 0px;
 }
+
+/* Sobrepondo elementos */
+/* z-index => contexto de empilhanmento */
+.materia1 {
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 20;
+}
+
+.materia2 {
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 10;
+}
+
+.materia3 {
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 11;
+}

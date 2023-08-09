@@ -215,3 +215,27 @@ o elemento não fica totalmente fixado na posição 0 do topo devido ao elemento
     left: 160px;
     z-index: 11;
 }
+
+/* Formatando links */
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+/* links não visitados */
+a:link, a:visited {
+    color: #b9c941;
+}
+/* links visitados */
+a:visited {
+    color: #b9c941;
+}
+/* links hover, passa o cursor sobre o link */
+a:hover {
+    color: #fff;
+    background: #6d790f;
+}
+
+/* link ativos, quando clicado */
+a:active {
+    color: #e4f371
+}

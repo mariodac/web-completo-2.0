@@ -1,47 +1,83 @@
 /* Seletor universal */
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 /* seletor de texto */
-h1 {
+/* h1 {
     color: green;
-}
+} */
 
 /* Seletor de classe */
 /* .roxo {
     color: purple;
 } */
 /* Seletor de classe  para um determinado elemento*/
-p.roxo{
+/* p.roxo{
     color: purple;
-}
+} */
 
 /* Seletor de ID */
-#cabecalho {
+/* #cabecalho {
     border: 1px solid blue;
-}
+} */
 
 /* Seletor de filho */
-li>a {
+/* li>a {
     color: orange;
     text-decoration: none;
-}
+} */
 
 /* Seletor descendente */
-p a {
+/* p a {
     color: green
-}
+} */
 
 /* Seletor de irmão adjacente */
-h2+p{
+/* h2+p{
     color: aqua;
-}
+} */
 
 /* Seletor de irmão geral */
 
-h3~p {
+/* h3~p {
     color:yellow;
     background-color: black;
+} */
+
+/* Herança e especifidade */
+
+/* border e background não são herdados */
+/* body {
+    color:red;
+    border: 1px solid blue;
+} */
+
+/* em seletores duplicados sempre o ultimo seletor será aplicado */
+/* import define que o atributo é mais importante que os outros atributos*/
+/* p {
+    color: red !important;
+}
+p {
+    color: blue;
+} */
+
+/* se um seletor for mais especifico que outro a regra mais especifica será aplicada
+Precendencia sobre regras mais gerais */
+
+* {
+    color: red;
+
 }
 
+h2 {
+    color: blue;
+}
+/* id é mais especifico que a class */
+h2.verde {
+    color: green;
+}
+
+h2#amarelo {
+    color: yellow;
+}

@@ -1,5 +1,5 @@
 /* Seletor universal */
-/* * {
+/* {
     border: 1px solid red;
 } */
 
@@ -65,19 +65,43 @@ p {
 /* se um seletor for mais especifico que outro a regra mais especifica será aplicada
 Precendencia sobre regras mais gerais */
 
-* {
+/* * {
     color: red;
 
 }
 
 h2 {
     color: blue;
-}
+} */
 /* id é mais especifico que a class */
-h2.verde {
+/* h2.verde {
     color: green;
 }
 
 h2#amarelo {
     color: yellow;
+} */
+
+/* Barra de navegação vertical */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+    color: #fff;
+}
+

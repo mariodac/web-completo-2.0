@@ -1,5 +1,5 @@
 /* Seletor universal */
-{
+*{
     border: 1px solid red;
 }
 
@@ -65,7 +65,7 @@ p {
 /* se um seletor for mais especifico que outro a regra mais especifica será aplicada
 Precendencia sobre regras mais gerais */
 
-{
+*{
     color: red;
 
 }

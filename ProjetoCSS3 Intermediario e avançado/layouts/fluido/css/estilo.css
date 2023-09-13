@@ -1,0 +1,77 @@
+/* Layout fluido ou liquido */
+/* Layout fluido é diferente de layout responsivo */
+/* Utiliza porcentagem para definir o tamanho dos componentes */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2f2;
+}
+
+#container {
+    width: 85%; /* 720px */
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+    /* max-width: 960%; */
+}
+
+#marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+/* em leitores de tela para pessoas cegas, o ideal é o conteúdo vir primeiro, pois será a primeira parte que será lida */
+/* container possui 720 de largura basta utilizar regra de 3 para descobrir a porcentagem de conteudo e navegacao */
+#conteudo {
+    width: 75%; /* 520px -> 74,28 */ 
+    float: right;
+}
+
+#conteudo-principal {
+    width: 64%; /* 320px -> 64 */ 
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 36%; /* 180px -> 36 */
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 23%; /* 180px -> 25,71 */
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style: none;
+    display: block;
+    line-height: 2em;
+    text-indent: 25px;
+}
+
+#navegacao li a {
+    color: #000;
+    text-decoration: none;
+    /* text-indent: 40px; */
+}
+
+#navegacao li a:hover{
+    color: #fff;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}

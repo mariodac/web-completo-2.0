@@ -1,0 +1,35 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table#produtos {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+table#produtos th, table#produtos td {
+   padding: 7px;
+}
+
+table#produtos th{
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+
+/* A convenção é alinhar numeros muito grandes a direita */
+table#produtos .numero {
+    text-align: right;
+}
+
+table#produtos tr:hover {
+    background-color: #c3e6e5;
+}

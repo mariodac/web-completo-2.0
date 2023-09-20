@@ -1,0 +1,29 @@
+/* Arrendondamento com imagens */
+.caixa {
+    width: 400px;
+    background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+    /* background: #dedede url(../imagens/topo2.png) no-repeat left top; */
+    /* background: #dedede url(../imagens/topo.png) no-repeat left top; */
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    /* border: 1px solid red; */
+    background: url(../imagens/topo2.png) no-repeat left top;
+}
+
+
+.caixa .ultimo {
+    background: url(../imagens/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+    /* padding-bottom: 20px; */ /* para utilizar o paragrafo como ultimo elemento */
+}
+
+.caixa p {
+    padding: 0 20px;
+    margin-bottom: 0; /* para remover espaçamento extra quando está utilizando a div */
+    /* background: url(../imagens/baixo.png) no-repeat left bottom; */
+    /* background: url(../imagens/baixo2.png) no-repeat left bottom; */
+}
+

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Notícias cidade - Seu site de notícias</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+
 <body class="home">
     <!-- INICIO container -->
     <div id="container">
@@ -33,7 +35,7 @@
                     <a id="ciencia" href="ciencia.html">Ciência</a>
                 </li>
                 <li>
-                    <a id="fotos" href="fotos.html">Fotos</a>
+                    <a id="fotos" href="destaques.html">Destaques</a>
                 </li>
             </ul>
         </div>
@@ -43,21 +45,104 @@
         <div id="conteudo">
             <!-- INICIO primario -->
             <div id="primario">
-                <div class="caixa">
+                <div class="caixa destaque">
                     <h2>Destaques</h2>
                     <div class="caixa-conteudo">
-                        Proident <br> in <br> exercitation.
+                        <h3>Nova legislação</h3>
+                        <img class="imagem-principal" src="./imagens/taxi.jpg" alt="Taxi" width="100%">
+                        <p>Eiusmod amet Lorem ullamco labore fugiat voluptate id in ex nostrud dolore cupidatat. Ullamco
+                            ex laboris mollit sint. Esse velit quis excepteur eiusmod cupidatat occaecat.</p>
+                        <a href="./destaques.html">Leia mais!</a>
+
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <h2>Mundo</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href="./ciencia.html">
+                                    <img src="./imagens/artificial-intelligence-3382507_1280.jpg" alt="tecnologia" width="80">
+                                    <h3>IA dominando o mundo</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./internacional.html">
+                                    <img src="./imagens/stop-1325308_1280.png" alt="tecnologia" width="80">
+                                    <h3>Pare a guerra</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./economia.html">
+                                    <img src="./imagens/currency-311743_1280.png" alt="tecnologia" width="80"  height="55">
+                                    <h3>Converta moeda</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./saude.html">
+                                    <img src="./imagens/covid.webp" alt="tecnologia" width="80">
+                                    <h3>COVID</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <!-- FIM primario -->
-                
+
             <!-- INICIO secundario -->
             <div id="secundario">
-                <div class="caixa">
-                    <h2>Notícias</h2>
+                <!-- INICIO entrevista -->
+                <div class="caixa entrevista">
+                    <h2>Última entrevista</h2>
                     <div class="caixa-conteudo">
-                        Proident <br> in <br> exercitation.
+                        <h3>Entrevista com felipe silva</h3>
+                        <img class="imagem-principal" src="./imagens/doutor.jpg" alt="Doutor" width="100%">
+                        <p>Eiusmod amet Lorem ullamco labore fugiat voluptate id in ex nostrud dolore cupidatat. Ullamco
+                            ex laboris mollit sint. Esse velit quis excepteur eiusmod cupidatat occaecat.</p>
+                        <a href="">Leia mais!</a>
+
+                    </div>
+                </div>
+                <!-- FIM entrevista -->
+                <div class="caixa">
+                    <h2>Notícias Recentes</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href="./internacional.html">
+                                    <img src="./imagens/movies-4276397_1280.png" alt="tecnologia" width="80"  height="55">
+                                    <h3>Novos filmes</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./ciencia.html">
+                                    <img src="./imagens/big-data-1667212_1280.png" alt="tecnologia" width="80">
+                                    <h3>BIG DATA</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./brasil.html">
+                                    <img src="./imagens/taxi.jpg" alt="tecnologia" width="80">
+                                    <h3>Nova legislação</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./saude.html">
+                                    <img src="./imagens/doutor.jpg" alt="doutor" width="80">
+                                    <h3>Novo doutor</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -68,7 +153,29 @@
                 <div class="caixa">
                     <h2>Entrevistas</h2>
                     <div class="caixa-conteudo">
-                        Officia enim.
+                        <ul>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">Felipe Silva</a></li>
+                            <li><a href="">Renato Rodrigues</a></li>
+                            <li><a href="">Aberlardo Silveira</a></li>
+                            <li><a href="">André Carlos</a></li>
+                            <li><a href="">Márcio Mello</a></li>
+                            <li><a href="">João Pedro</a></li>
+                            <li><a href="">Fernando Weiss</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <h2>News</h2>
+                    <div class="caixa-conteudo">
+                        <form>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" placeholder="E-mail">
+                            </div>
+                            <div><input class="submit" type="submit" value="Cadastrar"></div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -77,7 +184,7 @@
         <!-- FIM conteudo -->
     </div>
     <!-- FIM container -->
-    
+
     <!-- INICIO rodape -->
     <div id="container-rodape">
         <div id="rodape">
@@ -86,4 +193,5 @@
     </div>
     <!-- FIM rodape -->
 </body>
+
 </html>

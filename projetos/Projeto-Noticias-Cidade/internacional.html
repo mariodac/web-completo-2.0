@@ -5,8 +5,10 @@
     <title>Notícias cidade - Internacional</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-<body class="internacional">
+<body id="uma-coluna"" class="internacional">
+    <!-- INICIO container -->
     <div id="container">
+        <!-- INICIO topo -->
         <div id="topo">
             <!-- estratégia para leitor de tela, caso o css não carregue -->
             <!-- não é uma boa prática esconder conteúdos dos usuários -->
@@ -31,10 +33,77 @@
                     <a id="ciencia" href="ciencia.html">Ciência</a>
                 </li>
                 <li>
-                    <a id="fotos" href="fotos.html">Fotos</a>
+                    <a id="fotos" href="destaques.html">Destaques</a>
                 </li>
             </ul>
         </div>
+        <!-- FIM topo -->
+
+        <!-- INICIO conteudo -->
+        <div id="conteudo">
+            <!-- INICIO primario -->
+            <div id="primario">
+                <div class="caixa destaque">
+                    <h2>Destaques</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Novo filme</h3>
+                        <img class="imagem-principal" src="./imagens/movies-4276397_1280.png" alt="Claquete" width="100%">
+                        <p>Eiusmod amet Lorem ullamco labore fugiat voluptate id in ex nostrud dolore cupidatat. Ullamco
+                            ex laboris mollit sint. Esse velit quis excepteur eiusmod cupidatat occaecat.</p>
+
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <h2>Mundo</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href="">
+                                    <img src="./imagens/john-lennon-4688793_1280.webp" alt="Jhon Lennon" width="80" height="55">
+                                    <h3>Homenagem ao aniversário de Jhon Lennon</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imagens/stop-1325308_1280.png" alt="stop wars" width="80" height="55">
+                                    <h3>Campanha contra guerra</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imagens/cidade.jpg" alt="tecnologia" width="80">
+                                    <h3>Novas políticas</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imagens/tecnologia.jpg" alt="tecnologia" width="80">
+                                    <h3>Novas tecnologias</h3>
+                                    <p>Irure commodo aute et ut esse sint in ipsum laborum minim ipsum sit.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM primario -->
+
+            
+        </div>
+        <!-- FIM conteudo -->
     </div>
+    <!-- FIM container -->
+
+    <!-- INICIO rodape -->
+    <div id="container-rodape">
+        <div id="rodape">
+            &copy; Copyright 2000-2023 Notícias cidade
+        </div>
+    </div>
+    <!-- FIM rodape -->
 </body>
 </html>
